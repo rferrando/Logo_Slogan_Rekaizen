@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- proper responsive behaviors -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rekaizen</title>
+  <!-- Animation CSS -->
+  <link rel='stylesheet' href='style_logo.css' />
+  <!-- Font Montserrat -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper">
+    <svg viewBox="0 0 362.1 102.6">
+      <text transform="matrix(1 0 0 1 95.9178 91.4168)" id="motto" style="font-family: 'Montserrat', sans-serif;fill:#c4cc65">
+        Make a good retrospective
+      </text>
+
+      <text x="22" y="69.165802" style="font-size:44.60480118px;font-family:kamikaze-italic;fill:#c4cc65" id="rekaizen">
+        re kaizen
+      </text>
+        <!-- Animation trick to show above text -->
+      <rect x="0" y="0" width=".1" height="300" fill="#fff">
+        <animate attributeType="XML" attributeName="x"
+          from="0" to="300" begin="0s" dur="3s"
+          repeatCount=1 />
+        <animate attributeType="XML" attributeName="width"
+          from="300" to="0" begin="0s" dur="3s"
+          repeatCount=1 />
+      </rect>
+
+      <path class="path" id="enso"
+         d="m 37.4,93.5 c 48.9,17 84,-61.4 33.8,-80.6 -2.2,-0.9 -15,-4.2 -13.7,2 0.8,3.5 11,7 13.9,9.3 10.2,8 16.8,20.4 14.5,33.5 C 80.7,86.6 45.5,98.5 24.5,78.2 12.4,66.4 15.9,56.5 13,42.4 10.9,43.2 12.9,37.9 13.3,36.9 14.9,33.6 24,23 23.4,20.6 -2.9,42.4 5.3,82.3 37.4,93.5 Z M 29.6,14.8 c -4.7,1.4 -9.1,5.1 -12.1,8.9 4.1,-1.6 9.2,-5.7 12.1,-8.9 z m 3.7,1.5 c -1.3,0.5 -2,0.9 -3,1.8 1.2,-0.5 2,-0.9 3,-1.8 z m 4.1,-1.7 c -1.2,0.1 -1.1,0 -1.8,0.9 z m -0.8,-2.3 c -1.3,0.3 -2.3,0.6 -3.5,1.2 1.4,-0.1 2.3,-0.4 3.5,-1.2 z">
+      </path>
+    </svg>
+  </div>
+</body>
+
+</html>
