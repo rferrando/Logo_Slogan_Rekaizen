@@ -29,6 +29,8 @@
   transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
+  transform-box: fill-box;
+  -webkit-transform-box: fill-box;
 }
 
 #enso {
