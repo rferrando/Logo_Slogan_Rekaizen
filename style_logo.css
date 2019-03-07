@@ -17,6 +17,8 @@
 
 #motto {
   animation: myMotto-visible 0s 3s forwards;
+  -webkit-animation: myMotto-visible 0s 3s forwards;
+  -moz-animation: myMotto-visible 0s 3s forwards;
   visibility: hidden;
 }
 
@@ -25,14 +27,18 @@
   stroke-width: 1;
   fill: #c4cc65;
   transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
 }
 
 #enso {
   /* cubic-bezier(.33,.07,.69,.93)  ---- 2.5s .3s cubic-bezier(.17,.37,.43,.67) */
   animation: spin_anticlock 2.5s cubic-bezier(.23,.33,.55,.55) 1,
   fadeout 2.5s linear 1;
-  /* -webkit-animation*/
-  /* -moz-animation*/
+  -webkit-animation: spin_anticlock 2.5s cubic-bezier(.23,.33,.55,.55) 1,
+  fadeout 2.5s linear 1;
+  -moz-animation: spin_anticlock 2.5s cubic-bezier(.23,.33,.55,.55) 1,
+  fadeout 2.5s linear 1;
 }
 
 @Keyframes fadeout {
@@ -42,12 +48,41 @@
   75%  { opacity: .75; }
   100%  { opacity: 1; }
 }
+@-webkit-Keyframes fadeout {
+  0%  { opacity: 0; }
+  25%  { opacity: .25; }
+  50%  { opacity: .5; }
+  75%  { opacity: .75; }
+  100%  { opacity: 1; }
+}
+@-moz-Keyframes fadeout {
+  0%  { opacity: 0; }
+  25%  { opacity: .25; }
+  50%  { opacity: .5; }
+  75%  { opacity: .75; }
+  100%  { opacity: 1; }
+}
+
 
 @keyframes myMotto-visible {
   to   { visibility: visible; }
 }
+@-webkit-keyframes myMotto-visible {
+  to   { visibility: visible; }
+}
+@-moz-keyframes myMotto-visible {
+  to   { visibility: visible; }
+}
 
 @keyframes spin_anticlock {
+  from { transform: rotate(359deg); }
+  to { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin_anticlock {
+  from { transform: rotate(359deg); }
+  to { transform: rotate(0deg); }
+}
+@-moz-keyframes spin_anticlock {
   from { transform: rotate(359deg); }
   to { transform: rotate(0deg); }
 }
